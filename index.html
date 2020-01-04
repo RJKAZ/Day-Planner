@@ -1,26 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="styles.css">
   <title>Day Planner</title>
 </head>
+
 <body>
   <header class="jumbotron">
     <h1 class="header">Day Planner</h1>
     <p class="lead">Save your events to keep track of the days events!</p>
-    <p id="currentDay" class="lead"></p>
+    <br>
+    <p id="currentDate" class="lead"></p>
   </header>
 
   <div class="container">
-    <table class="one-hour-of-time">
+    <table class="time-table">
       <table>
         <tr>
           <td id="hour">9am </td>
           <td>
-            <textarea id = "content-input1"></textarea>
+            <textarea id="content-input1"></textarea>
           </td>
           <td>
             <button class="svBtn">Save</button>
@@ -29,7 +33,7 @@
         <tr>
           <td id="hour">10am </td>
           <td>
-            <textarea id = "content-input2"></textarea>
+            <textarea id="content-input2"></textarea>
           </td>
           <td>
             <button class="svBtn">Save</button>
@@ -38,7 +42,7 @@
         <tr>
           <td id="hour">11am </td>
           <td>
-            <textarea id = "content-input3"></textarea>
+            <textarea id="content-input3"></textarea>
           </td>
           <td>
             <button class="svBtn">Save</button>
@@ -47,7 +51,7 @@
         <tr>
           <td id="hour">12pm </td>
           <td>
-            <textarea id = "content-input4"></textarea>
+            <textarea id="content-input4"></textarea>
           </td>
           <td>
             <button class="svBtn">Save</button>
@@ -56,7 +60,7 @@
         <tr>
           <td id="hour">1pm </td>
           <td>
-            <textarea id = "content-input5"></textarea>
+            <textarea id="content-input5"></textarea>
           </td>
           <td>
             <button class="svBtn">Save</button>
@@ -65,7 +69,7 @@
         <tr>
           <td id="hour">2pm </td>
           <td>
-            <textarea id = "content-input6"></textarea>
+            <textarea id="content-input6"></textarea>
           </td>
           <td>
             <button class="svBtn">Save</button>
@@ -74,7 +78,7 @@
         <tr>
           <td id="hour">3pm </td>
           <td>
-            <textarea id = "content-input7"></textarea>
+            <textarea id="content-input7"></textarea>
           </td>
           <td>
             <button class="svBtn">Save</button>
@@ -83,7 +87,7 @@
         <tr>
           <td id="hour">4pm </td>
           <td>
-            <textarea id = "content-input8"></textarea>
+            <textarea id="content-input8"></textarea>
           </td>
           <td>
             <button class="svBtn">Save</button>
@@ -92,7 +96,7 @@
         <tr>
           <td id="hour">5pm </td>
           <td>
-            <textarea id = "content-input9"></textarea>
+            <textarea id="content-input9"></textarea>
           </td>
           <td>
             <button class="svBtn">Save</button>
@@ -104,5 +108,16 @@
     </table>
   </div>
   <script src="script.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="moment.min.js"></script>
+
+  <script type="text/javascript">
+    var presentDay = moment().format('LLLL');
+    var x = document.getElementById("currentDate");
+    x.innerHTML = presentDay;
+  </script>
+
+
 </body>
+
 </html>
