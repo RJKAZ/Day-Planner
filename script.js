@@ -1,7 +1,7 @@
 var jumbotron = document.querySelector(".jumbotron");
 var lead = document.querySelector(".lead");
 
-var currentDate = document.querySelector("#currentDay");
+var currentDate = document.getElementById("#currentDate");
 
 var containerDiv = document.getElementsByClassName("container");
 var timeTable = document.querySelector("time-table");
